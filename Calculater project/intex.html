@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="calculator">
+    <input type="text" id="display" placeholder="0">
+    <div class="buttons">
+      <button class="special" onclick="Display('(')">(</button>
+      <button class="special" onclick="Display(')')">)</button>
+      <button class="special" onclick="Display('%')">%</button>
+      <button class="special" onclick="calculateSquareRoot()">√</button>
+      <button onclick="Display('7')">7</button>
+      <button onclick="Display('8')">8</button>
+      <button onclick="Display('9')">9</button>
+      <button class="operatorButton" onclick="Display('/')">/</button>
+      <button onclick="Display('4')">4</button>
+      <button onclick="Display('5')">5</button>
+      <button onclick="Display('6')">6</button>
+      <button class="operatorButton" onclick="Display('*')">x</button>
+      <button onclick="Display('1')">1</button>
+      <button onclick="Display('2')">2</button>
+      <button onclick="Display('3')">3</button>
+      <button class="operatorButton" onclick="Display('-')">-</button>
+      <button onclick="Display('0')">0</button>
+      <button onclick="Display('.')">.</button>
+      <button class="clear" onclick="clearDisplay()">AC</button>
+      <button class="operatorButton" onclick="Display('+')">+</button>
+      <button class="operatorButton" onclick="calculateResult()">ENTER</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html
